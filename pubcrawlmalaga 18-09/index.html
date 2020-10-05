@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="./style.css" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png" > 
+		<title>Pub Crawl Malaga</title>
+	</head>
+
+	<body>
+
+		<header class="header" id="myHeader">
+			<script src="https://www.google.com/recaptcha/api.js"></script>
+			<nav role="navigation">
+				<div class="logo-container" id="myLogo"> 
+					<a href="#"><img src="./img/logo.png"  alt="logo"/> </a>
+					</div>
+
+				<div class="hamburger" id="hamburgerID">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+
+				</div>
+				<ul class="nav-links">
+					<li><a class="nav-link" href="#details"> DETAILS</a></li>
+					<li><a class="nav-link" href="#description">DESCRIPTION</a></li>
+					<li><a class="nav-link" href="#aboutus">ABOUT US</a></li>
+			
+				</ul>
+			</nav>
+
+		</header>
+
+		<main>
+			<section class="presentation">
+				<div class="introduction">
+					<div class="intro-text">
+						<h1>JOIN US</h1>
+						<p>
+							See the night life of Malaga with us!
+						</p>
+					</div>
+					<div class="cta">
+						<button class="cta-select"><a href="https://fareharbor.com/embeds/book/southtours/items/148437/?full-items=yes&flow=no">Book now!</a><script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"></script></button>
+						<button  class="cta-add">Contact</button>
+					</div>
+				</div>
+				<div class="cover">
+					<img src="./img/img.jpg" alt="" />
+				</div>
+			</section>
+
+			<div class="modal-bg">
+				<div class="modal">
+					
+					<form class="contact-form" id="contactformid" action="contactform.php" method="post">
+					<h2>Contact Us!</h2>
+					<label for="name">Name:	</label> </br>
+					<input type="text" name="name" id="cname" placeholder="Your name">	</br>
+					<label for="email">E-mail</label> </br>
+					<input type="text" name="mail" id="cmail" placeholder="Your e-mail"> </br>
+					<label for="subject">Subject:	</label> </br>
+					<input type="text" name="subject" id="csubject" placeholder="Subject"> </br>
+					<label for="message">Message:	</label> </br>
+					<textarea name="message" class="message" id="cmessage" placeholder="Message"  rows="12" cols="50"></textarea> </br>
+					
+					<div class="g-recaptcha" data-sitekey="6LeWdswZAAAAAMZ95M__-qzoHYlSYJ3z-2brnlx3"></div>
+					<button class="cta-add" type="submit" name="submit" > SEND </button>
+				</form>
+					<span class="modal-close">X</span>
+				</div>
+			</div>
+
+			<script src="app.js"></script>
+
+			<img class="big-circle" src="./img/big-eclipse.png" alt="" />
+			<img class="medium-circle" src="./img/mid-eclipse.png" alt="" />
+			<img class="small-circle" src="./img/small-eclipse.png" alt="" />
+		
+		</main>
+
+		<div id="details">
+		<h1></br> DETAILS </h1>
+		</br>
+		<div class="tab">
+			<button class="tablinks" onclick="openTab(event, 'Languages')" id="defaultOpen">Languages</button>
+			<button class="tablinks" onclick="openTab(event, 'Duration')">Duration</button>
+			<button class="tablinks" onclick="openTab(event, 'Included')">What is Included</button>
+			<button class="tablinks" onclick="openTab(event, 'Schedules')">Scedules</button>
+			<button class="tablinks" onclick="openTab(event, 'Prices')">Prices</button>
+			<button class="tablinks" onclick="openTab(event, 'Cancellations')">Cancellations</button>
+		  </div>
+		  
+		  <!-- Tab content -->
+		  <div id="Languages" class="tabcontent">
+			<h2>Languages</h2>
+		</br>
+	 	<img src="./img/English.png" alt=""/> 
+		<img src="./img/Spanish.png" alt=""/>	
+		  </div>
+		  
+		  <div id="Duration" class="tabcontent">
+			<h2>Duration</h2>
+			3 hours approx
+		  </div>
+		  
+		  <div id="Included" class="tabcontent">
+			<h2>What is included</h2>
+			5 drinks </br>
+			3 bars
+		  </div>
+
+		  <div id="Schedules" class="tabcontent">
+			<h2> Schedules </h2>
+			Meeting point every night at 10PM at la Plaza de la Merced N 14
+			We recommend to arrive 10 minutes before the starting time.
+			COVID safety is ensured!
+		  </div>
+
+
+		  <div id="Prices" class="tabcontent">
+			<h2>Prices </h2>
+			13 Euros
+		  </div>
+
+		  <div id="Cancellations" class="tabcontent">
+			<h2>Cancellations:</h2>
+			<h4>Read this information carefully: </h4>
+
+				If you cancel at least 7 calendar days before, then no cancellation fee will apply.
+				In case you cancel between 3 and 6 calendar days prior, a cancellation fee of 50% will apply.
+				Whether you cancel within 2 calendar days prior, hence a cancellation fee of 100% will apply.
+		  </div>
+		</div>
+
+	<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+	</script>
+
+
+		<div id="description">
+			<h1> </br>DESCRIPTION </h1> </br>
+			Malaga Pub Crawl – After visiting Malaga at the day time, we will be continuing for the evening with the best pub crawl in town!
+			Starting at our meeting point at Midnight at the New Bar Picasso at Plaza de la Merced, we will then take you on a tour showing you the city centre’s vibrant nightlife, on a circular walking/crawling route to make sure we end near where we start.
+			Also We change bars and clubs every night, so you can be sure you can join more than one time!
+			Malaga Pub Crawl can run every day, (we almost always meet the minimum amount of people) because most of the time there are always a lot of people that want to join from any part in the world.
+			The night involves 4 stops. First of all Starting with a mixture of relaxed, loud, classy and grimy bars before ending with VIP entry to a fantastic nightclub. (also skip the queue!).
+			Hence Along the way there are all sorts of drinks discounts plus a free shot/drink in every place, and that’s not even mentioning a whole night of pure spanish fun! How much can you drink?!? so Here is your inspiration:
+			</div>
+
+		<div id="quote">
+			“Everybody’s got to believe in something. </br>
+			so I believe I’ll have another beer.”
+		</div>	
+
+
+		<div id="salud">
+			Salud!
+			</div>
+
+
+		<div id="required">
+			*18 years of age mandatory, picture ID required. </br>
+			If you do not book, it is mandatory to call, text or send us an e-mail in order to get a confirmation. </br>
+			In fact just by coming to the meeting point, this does not guarantee that you will be able to join.
+
+		</div>
+
+
+		<div id="aboutus">
+			<h1>WHAT THEY SAY ABOUT US</h1></br>
+			Recommended for young people (at heart), solo travelers and small groups, people who like to drink or not too much, people who like music,
+			 parties, dancing, meeting new people, drinking, getting to know the night life.
+			It was done the way it should be. First we went to a few bars. 
+			We got real shots with 100% liquer (some pub crawls mix 30% liquor with juice),
+			 got a glass of beer, glass of sangria, more shots, and some more drinks.
+			  I can’t even remember. I really only paid for one drink that night. 
+			  I’m a cheap drunk, but even if you wanted to get wasted you wouldn’t end up spending much more than the Malaga pub crawl costs you. 
+			  Great economy. Great pubs. Ended the night in a good place with music. They say they change every night. That’s how it should be.	
+		
+
+
+		</br>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<div id="socialmedia">
+			<h4> FOLLOW US ON SOCIAL MEDIA</h4>
+			<a href="https://www.facebook.com/malagapubcrawl/" class="fa fa-facebook"></a>
+			<a href="https://www.instagram.com/malagacrawl/" class="fa fa-instagram"></a>
+			<a href="https://www.linkedin.com/company/south-tours-malaga" class="fa fa-linkedin"></a>
+			
+		
+		</div>
+		</div>
+
+	
+		<div id="meetingpoint">
+
+			<h1> MEETING POINT</h1> </div>
+			
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d51167.26065809389!2d-4.417107000000001!3d36.723671!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6af558995fde158!2sPicasso%20Bar%20Tapas!5e0!3m2!1shu!2ses!4v1597668810475!5m2!1shu!2ses"
+				width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				
+			</div>
+	
+			
+
+			<div class="whatsapp">
+				<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+				<div class="elfsight-app-dd043e15-4f77-4bc1-855d-8af3d46996bd"></div></div>
+		</div>
+
+
+	</body>
+
+</html>
